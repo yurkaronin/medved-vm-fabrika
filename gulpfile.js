@@ -26,10 +26,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 /* минификация js и исключение неиспользуемого кода */
 const uglify = require('gulp-uglify');
-/* svg-спрайты */
-const svgSprite = require('gulp-svg-sprite');
-/* оптимизация svg-файлов */
-const svgo = require('gulp-svgo');
 /* оптимизация картинок */
 const imagemin = require('gulp-imagemin');
 /* сжатие html */
@@ -123,36 +119,6 @@ task('styles-final', () => {
 });
 
 
-/* задание на: работа с js  */
-task('scripts', () => {
-  return src(['./src/js/*.js'])
-    .pipe(sourcemaps.init())
-    .pipe(concat('main.js', { newLine: ';' }))
-    .pipe(sourcemaps.write())
-    .pipe(dest('./build/js/'))
-    .pipe(browserSync.reload({ stream: true }));
-});
-
-task('scripts-final', () => {
-  return src(['./src/js/*.js'])
-    .pipe(concat('main.js', { newLine: ';' }))
-    .pipe(uglify())
-    .pipe(dest('./final/js/'))
-});
-
-/* задание на: работа со сторонними библиотеками */
-task('libs', () => {
-  return src('./src/libs/**/*')
-    .pipe(dest('./build/libs/'))
-    .pipe(browserSync.reload({ stream: true }));
-});
-
-task('libs-final', () => {
-  return src('./src/libs/**/*')
-    .pipe(dest('./final/libs/'))
-});
-
-
 /* задание на: работа с растровой графикой  */
 task('images', () => {
   return src('./src/img/**/*')
@@ -180,8 +146,6 @@ task('images-final', () => {
 task('watch', () => {
   watch('./src/html/**/*.html', series('html'));
   watch('./src/scss/**/*.scss', series('styles'));
-  watch('./src/js/**/*.js', series('scripts'));
-  watch('./src/libs/**/*', series('libs'));
   watch('./src/img/**/*', series('images'));
   watch('./src/fonts/**/*', series('fonts'));
 })
@@ -208,12 +172,12 @@ task('server-final', () => {
 /* основной таск (дефолтный): последовательное выполнение */
 task('default',
   series('clean',
-    parallel('html', 'images', 'fonts', 'styles', 'scripts', 'libs'),
+    parallel('html', 'images', 'fonts', 'styles'),
     parallel('server', 'watch')
   ));
 
 task('fatality',
   series('clean-final',
-    parallel('html-final', 'images-final', 'fonts--final', 'styles-final', 'scripts-final', 'libs-final'),
+    parallel('html-final', 'images-final', 'fonts--final', 'styles-final'),
     parallel('server-final')
   ));

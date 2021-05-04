@@ -1,0 +1,28 @@
+.benefits-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  grid-template-columns: auto auto auto auto;
+  gap: 80px;
+
+  li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img {
+      display: block;
+      margin-right: 15px;
+    }
+
+    p {
+      margin: 0;
+      max-width: 200px;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="custom-active" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,19 +13,60 @@
 </head>
 
 <body>
-  <div class="visually-hidden">
-    @@include('../../build/svg/sprite.svg')
-  </div>
-
-  @@include('sections/header-top.html')
-  @@include('sections/header.html')
   <main>
+    <section class="main-promo">
+      <div class="wrapper main-promo__wrapper">
+
+        <div class="main-promo__details">
+          <h1 class="visually-hidden">Натяжные потолки в Краснодаре: производство и монтаж с гарантией</h1>
+          <h2 class="title">Натяжные потолки
+            в&nbsp;Краснодаре</h2>
+          <p class="subtitle"><span>от <del>230</del> 169 руб/м<sup>2</sup></span>
+            материал+установка</p>
+
+          <p class="text">Выезд замерщика и консультации бесплатно!
+            <div class="main-promo__buttons">
+              <a href="#" class="button button--transparent">Консультация онлайн</a>
+              <a href="#" class="button">Вызвать замерщика</a>
+            </div>
+            <i>Просто запишитесь, это ни к чему вас не обязывает.<br>
+              Ближайшая дата – сегодня. Время согласуем</i>
+          </p>
+        </div>
+
+        <div class="main-promo__image">
+          <img src="img/bg/1.jpg" alt="фотография натяжного потолка" class="main-promo__photo" width="1040"
+            height="630">
+        </div>
+
+      </div>
+
+      <div class="main-promo__benefits-list">
+        <div class="wrapper">
+          <ul class="benefits-list">
+            <li>
+              <img src="img/icons/1.svg" alt="иконка преимущества для клиента" width="42" height="53">
+              <p>Бесплатно – слив воды при затоплении соседями</p>
+            </li>
+            <li>
+              <img src="img/icons/2.svg" alt="иконка преимущества для клиента" width="35" height="54">
+              <p>Бесплатно – слив воды при затоплении соседями</p>
+            </li>
+            <li>
+              <img src="img/icons/3.svg" alt="иконка преимущества для клиента" width="54" height="49">
+              <p>Бесплатно – слив воды при затоплении соседями</p>
+            </li>
+            <li>
+              <img src="img/icons/4.svg" alt="иконка преимущества для клиента" width="54" height="54">
+              <p>Бесплатно – слив воды при затоплении соседями</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
 
   </main>
-  @@include('sections/footer.html')
-  @@include('sections/scripts-include.html')
-  @@include('sections/modals-include.html')
 </body>
 
 </html>
