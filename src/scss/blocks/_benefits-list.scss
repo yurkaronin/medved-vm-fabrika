@@ -26,3 +26,60 @@
     }
   }
 }
+
+@media (max-width: 1380px) {
+  .benefits-list {
+    gap: 30px;
+
+    li {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    img {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .benefits-list {
+    grid-template-columns: auto auto;
+    justify-content: center;
+    li {
+      flex-direction: row;
+      text-align: left;
+    }
+    img {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .benefits-list {
+    grid-template-columns: auto;
+    margin: 0 auto;
+    max-width: max-content;
+
+    li > p {
+      margin: 0;
+      flex-grow: 2;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .benefits-list {
+    li {
+      flex-direction: column;
+      text-align: center;
+    }
+    img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}

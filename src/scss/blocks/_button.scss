@@ -22,3 +22,10 @@
     border: 3px solid #000000;
   }
 }
+
+@media (max-width: 880px) {
+  .button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}

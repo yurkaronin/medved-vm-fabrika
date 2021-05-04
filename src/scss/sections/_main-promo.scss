@@ -16,13 +16,6 @@
     max-width: 630px;
     z-index: 2;
 
-    .title {
-      background-color: #fff;
-      display: inline-block;
-      padding: 10px 20px;
-      margin-bottom: 20px;
-    }
-
     .subtitle {
       color: #000000;
       font-size: 30px;
@@ -111,5 +104,53 @@
         border-color: #fff;
       }
     }
+    &__benefits-list {
+      padding: 45px 0;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .main-promo {
+    &__details {
+      .title {
+        font-size: 56px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .main-promo__buttons {
+    grid-template-columns: auto;
+
+    .button {
+      max-width: max-content;
+      margin: 0 auto;
+    }
+  }
+
+  .main-promo__details .title {
+    font-size: 38px;
+  }
+
+  .main-promo__details .subtitle {
+    font-size: 20px;
+  }
+
+  .main-promo__details .text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+  }
+
+  .main-promo__details i {
+    display: none;
+  }
+
+  .main-promo__wrapper {
+    padding-top: 20px;
+    padding-bottom: 35px;
   }
 }
