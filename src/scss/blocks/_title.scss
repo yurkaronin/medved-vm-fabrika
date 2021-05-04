@@ -12,4 +12,17 @@
   padding: 10px 20px;
   margin: 0;
   margin-bottom: 20px;
+
+  &--two {
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 880px;
+    display: block;
+  }
 }
