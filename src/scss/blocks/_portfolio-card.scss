@@ -4,13 +4,19 @@
   gap: 100px;
   align-items: flex-start;
 
+  @media (max-width: 1400px) {
+    gap: 40px;
+  }
+
+  @media (max-width: 970px) {
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+
   /* слайдер */
   .portfolio-card__slider {
     max-width: 540px;
     width: 100%;
-
-    &__slider-wrapper {
-    }
   }
 
   .portfolio-card__image {
@@ -19,6 +25,9 @@
       width: 100%;
       object-fit: cover;
       display: block;
+      @media (max-width: 400px) {
+          max-height: 300px;
+        }
     }
   }
 
@@ -26,12 +35,21 @@
   .portfolio-card__details {
     position: relative;
     z-index: 2;
+    @media (max-width: 1400px) {
+      max-width: 540px;
+      width: 100%;
+      margin: 0 auto;
+    }
     .adress {
       margin: 0;
       margin-bottom: 15px;
       font-size: 14px;
       line-height: 140%;
       color: #000000;
+
+      @media (max-width: 400px) {
+        margin-bottom: 5px;
+      }
     }
     .price {
       font-weight: 800;
@@ -41,6 +59,11 @@
       margin: 0;
       margin-bottom: 20px;
       display: inline-block;
+
+      @media (max-width: 400px) {
+        margin-bottom: 5px;
+        font-size: 26px;
+      }
     }
 
     .table {
@@ -53,11 +76,24 @@
       td {
         padding-bottom: 10px;
         padding-right: 30px;
+
+        @media (max-width: 400px) {
+          padding-right: 10px;
+          border-bottom: 1px solid;
+          padding-bottom: 5px;
+        }
       }
 
       th {
         padding-bottom: 10px;
         padding-right: 30px;
+        font-size: 12px;
+
+        @media (max-width: 400px) {
+          border-bottom: 1px solid;
+          padding-bottom: 5px;
+          padding-right: 10px;
+        }
       }
     }
   }

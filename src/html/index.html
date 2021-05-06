@@ -184,16 +184,19 @@
                   <!-- Slides -->
                   <div class="portfolio-card__slide swiper-slide">
                     <div class="portfolio-card__image">
-                      <img src="img/portfolio/1.jpg" alt="фотография потолка" width="540" height="406">
-                    </div>
-                  </div>
-                  <div class="portfolio-card__slide swiper-slide">
-                    <div class="portfolio-card__image">
-                      <img src="img/portfolio/2.jpg" alt="фотография потолка" width="540" height="406">
+                      <img class="swiper-lazy" data-src="img/portfolio/1.jpg"  src="img/portfolio/1x1.png"
+                        alt="фотография потолка" width="540" height="406">
+                        <div class="swiper-lazy-preloader"></div>
                     </div>
                   </div>
 
-                </div>
+                  <div class="portfolio-card__slide swiper-slide">
+                    <div class="portfolio-card__image">
+                      <img class="swiper-lazy" src="img/portfolio/2.jpg" alt="фотография потолка" width="540" height="406">
+                    </div>
+                  </div>
+
+                </div> <!-- .portfolio-card__slider -->
 
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
@@ -233,13 +236,10 @@
                   </tr>
                 </table>
                 <div class="buttons-wrapper">
-                  <a href="#" class="button  button--transparent">Читать отзыв</a>
+                  <a href="#" class="button  button--transparent">Подробнее</a>
                   <a href="#" class="button  button--blue">Хочу такой потолок</a>
                 </div>
-
-
-              </div>
-
+              </div><!-- .portfolio-card__details -->
             </article>
           </li>
         </ul>
@@ -260,10 +260,17 @@
         prevEl: '.swiper-button-prev',
       },
       grabCursor: true,
+      slidesPerView: 2,
 
       effect: 'fade',
       fadeEffect: {
         crossFade: true
+      },
+
+      preloadImages: false,
+      lazy: {
+        loadOnTransitionStart: false,
+        loadPrevNext: false,
       },
 
     });
