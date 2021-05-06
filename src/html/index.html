@@ -9,6 +9,8 @@
 
   @@include('sections/favicon.html')
   <title>ЕЩЕ ОДН КЛАССНЫЙ ПРОЕКТ</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -25,7 +27,7 @@
             материал+установка</p>
 
           <p class="text">Выезд замерщика и консультации бесплатно!
-            <div class="main-promo__buttons">
+            <div class="buttons-wrapper">
               <a href="#" class="button button--transparent">Консультация онлайн</a>
               <a href="#" class="button">Вызвать замерщика</a>
             </div>
@@ -166,9 +168,107 @@
         </ul>
       </div>
     </section>
+    <section class="main-portfolio">
+      <div class="wrapper">
+        <h2 class="title title--two">Примеры наших работ</h2>
+        <p class="subtitle">Посмотрите реальные фотографии натяжных потолков, ориентировочную стоимость на комплектующие
+          и подберите своё собственное решение для потолка.</p>
+
+        <ul class="main-portfolio__list">
+          <li>
+            <article class="portfolio-card">
+              <!-- Slider main container -->
+              <div class="portfolio-card__slider swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="portfolio-card__slider-wrapper swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="portfolio-card__slide swiper-slide">
+                    <div class="portfolio-card__image">
+                      <img src="img/portfolio/1.jpg" alt="фотография потолка" width="540" height="406">
+                    </div>
+                  </div>
+                  <div class="portfolio-card__slide swiper-slide">
+                    <div class="portfolio-card__image">
+                      <img src="img/portfolio/2.jpg" alt="фотография потолка" width="540" height="406">
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+
+              <div class="portfolio-card__details">
+                <h3 class="title  title--three">Монтаж глянцевого потолка
+                  в прихожей 4 м2, потолок фабричного китайского производства</h3>
+                <p class="adress">ул. Краснодар, ул. Центральная</p>
+                <span class="price">2 839 руб</span>
+                <table class="table">
+                  <tr>
+                    <th>Включено</th>
+                    <th>(если есть перечень)</th>
+                  </tr>
+                  <tr>
+                    <td>Обработка угла</td>
+                    <td>6 шт</td>
+                  </tr>
+                  <tr>
+                    <td>Профиль стеновой невидимый ПВХ</td>
+                    <td>4 метра</td>
+                  </tr>
+                  <tr>
+                    <td>Стойка для потолочного светильника</td>
+                    <td>6 шт</td>
+                  </tr>
+                  <tr>
+                    <td>Изготовление и окантовка отверстия</td>
+                    <td>2 шт</td>
+                  </tr>
+                  <tr>
+                    <td>Установка встраиваемого светильника</td>
+                    <td>4 шт</td>
+                  </tr>
+                </table>
+                <div class="buttons-wrapper">
+                  <a href="#" class="button  button--transparent">Читать отзыв</a>
+                  <a href="#" class="button  button--blue">Хочу такой потолок</a>
+                </div>
+
+
+              </div>
+
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
 
 
   </main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      loop: true,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      grabCursor: true,
+
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+
+    });
+
+  </script>
 </body>
 
 </html>

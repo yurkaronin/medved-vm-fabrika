@@ -1,0 +1,74 @@
+.portfolio-card {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 100px;
+  align-items: flex-start;
+
+  /* слайдер */
+  .portfolio-card__slider {
+    max-width: 540px;
+    width: 100%;
+
+    &__slider-wrapper {
+    }
+  }
+
+  .portfolio-card__image {
+    max-width: 540px;
+    img {
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  /* описание */
+  .portfolio-card__details {
+    position: relative;
+    z-index: 2;
+    .adress {
+      margin: 0;
+      margin-bottom: 15px;
+      font-size: 14px;
+      line-height: 140%;
+      color: #000000;
+    }
+    .price {
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 140%;
+      color: #000000;
+      margin: 0;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 25px;
+      font-size: 14px;
+      line-height: 120%;
+
+      td {
+        padding-bottom: 10px;
+        padding-right: 30px;
+      }
+
+      th {
+        padding-bottom: 10px;
+        padding-right: 30px;
+      }
+    }
+  }
+
+  /* стрелки */
+  .swiper-button-next:after,
+  .swiper-container-rtl .swiper-button-prev:after,
+  .swiper-button-prev:after,
+  .swiper-container-rtl .swiper-button-next:after {
+    color: #ff3636;
+    background-color: #ffffff75;
+    padding: 17px;
+  }
+}

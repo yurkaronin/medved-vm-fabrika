@@ -66,12 +66,7 @@
   padding: 65px 0;
 }
 
-.main-promo__buttons {
-  display: grid;
-  gap: 20px;
-  align-items: center;
-  grid-template-columns: auto auto;
-  flex-wrap: wrap;
+.main-promo .buttons-wrapper {
   margin-bottom: 10px;
 }
 
@@ -119,15 +114,6 @@
 }
 
 @media (max-width: 500px) {
-  .main-promo__buttons {
-    grid-template-columns: auto;
-
-    .button {
-      max-width: max-content;
-      margin: 0 auto;
-    }
-  }
-
   .main-promo__details .title {
     font-size: 38px;
   }

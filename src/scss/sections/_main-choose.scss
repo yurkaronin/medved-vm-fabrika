@@ -1,27 +1,16 @@
 .main-choose {
   padding: 60px 0;
-  background-color: #f2f2f2;
-  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23dadada' fill-opacity='0.92' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("../img/bg/pattern1.svg");
+  background-repeat: repeat;
   color: #000000;
 
-  a {
-    text-decoration: none;
-    color: inherit;
+  .title--two {
+    margin-bottom: 15px;
   }
-}
 
-.main-choose .title--two {
-  margin-bottom: 15px;
-}
-
-.main-choose .subtitle {
-  margin: 0;
-  margin-bottom: 75px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 130%;
-  text-align: center;
-  color: #000000;
+  .subtitle {
+    margin-bottom: 65px;
+  }
 }
 
 .choose__list {
@@ -47,14 +36,5 @@
   .choose__list {
     grid-template-columns: auto;
     gap: 50px;
-  }
-
-  .main-choose .title--two {
-    font-size: 22px;
-  }
-
-  .main-choose .subtitle {
-    font-size: 18px;
-    margin-bottom: 40px;
   }
 }
