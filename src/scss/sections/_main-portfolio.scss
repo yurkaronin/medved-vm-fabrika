@@ -11,5 +11,11 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    margin-bottom: 50px;
+  }
+  &__more-button {
+    max-width: max-content;
+    margin: 0 auto;
+
   }
 }

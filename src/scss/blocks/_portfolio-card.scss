@@ -82,6 +82,10 @@
           border-bottom: 1px solid;
           padding-bottom: 5px;
         }
+
+        &:last-child {
+          font-weight: 700;
+        }
       }
 
       th {
