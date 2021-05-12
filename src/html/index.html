@@ -71,10 +71,10 @@
         <h2 class="title  title--two">Какие потолки выбрать</h2>
         <p class="subtitle">Подберем фактуру, производителя, плотность, чтобы вы получили лучший потолок, не переплатив
           ни копейки.</p>
-        <ul class="choose__list">
-          <li>
-            <a href="">
-              <article class="ceiling-types-card">
+        <ul class="ceiling-types">
+          <li class="ceiling-types__item">
+            <a class="ceiling-types__link" href="">
+              <article class="ceiling-types__card">
                 <h3>Матовый</h3>
                 <img src="img/types/1.jpg" alt="фотография потолка" width="350" height="202">
                 <p>от 169 руб/м² Россия, фабричный Китай<br>
@@ -82,9 +82,9 @@
               </article>
             </a>
           </li>
-          <li>
-            <a href="">
-              <article class="ceiling-types-card">
+          <li class="ceiling-types__item">
+            <a class="ceiling-types__link" href="">
+              <article class="ceiling-types__card">
                 <h3>Глянцевый</h3>
                 <img src="img/types/2.jpg" alt="фотография потолка" width="350" height="202">
                 <p>от 169 руб/м² Россия, фабричный Китай<br>
@@ -92,9 +92,9 @@
               </article>
             </a>
           </li>
-          <li>
-            <a href="">
-              <article class="ceiling-types-card">
+          <li class="ceiling-types__item">
+            <a class="ceiling-types__link" href="">
+              <article class="ceiling-types__card">
                 <h3>Сатиновый</h3>
                 <img src="img/types/3.jpg" alt="фотография потолка" width="350" height="202">
                 <p>от 169 руб/м² Россия, фабричный Китай<br>
@@ -102,9 +102,9 @@
               </article>
             </a>
           </li>
-          <li>
-            <a href="">
-              <article class="ceiling-types-card">
+          <li class="ceiling-types__item">
+            <a class="ceiling-types__link" href="">
+              <article class="ceiling-types__card">
                 <h3>Гипоаллергенный.
                   Эко-линия</h3>
                 <img src="img/types/4.jpg" alt="фотография потолка" width="350" height="202">
@@ -113,9 +113,9 @@
               </article>
             </a>
           </li>
-          <li>
-            <a href="">
-              <article class="ceiling-types-card">
+          <li class="ceiling-types__item">
+            <a class="ceiling-types__link" href="">
+              <article class="ceiling-types__card">
                 <h3>Световые линии</h3>
                 <img src="img/types/5.jpg" alt="фотография потолка" width="350" height="202">
                 <p>от 169 руб/м² Россия, фабричный Китай<br>
@@ -123,9 +123,9 @@
               </article>
             </a>
           </li>
-          <li>
-            <a href="">
-              <article class="ceiling-types-card">
+          <li class="ceiling-types__item">
+            <a class="ceiling-types__link" href="">
+              <article class="ceiling-types__card">
                 <h3>Бесщелевой
                   KRAAB</h3>
                 <img src="img/types/6.jpg" alt="фотография потолка" width="350" height="202">
@@ -134,9 +134,9 @@
               </article>
             </a>
           </li>
-          <li>
-            <a href="">
-              <article class="ceiling-types-card">
+          <li class="ceiling-types__item">
+            <a class="ceiling-types__link" href="">
+              <article class="ceiling-types__card">
                 <h3>Парящий</h3>
                 <img src="img/types/7.jpg" alt="фотография потолка" width="350" height="202">
                 <p>от 169 руб/м² Россия, фабричный Китай<br>
@@ -144,9 +144,9 @@
               </article>
             </a>
           </li>
-          <li>
-            <a href="">
-              <article class="ceiling-types-card">
+          <li class="ceiling-types__item">
+            <a class="ceiling-types__link" href="">
+              <article class="ceiling-types__card">
                 <h3>Потолок
                   с шумоизоляцией</h3>
                 <img src="img/types/8.jpg" alt="фотография потолка" width="350" height="202">
@@ -155,9 +155,9 @@
               </article>
             </a>
           </li>
-          <li>
-            <a href="">
-              <article class="ceiling-types-card">
+          <li class="ceiling-types__item">
+            <a class="ceiling-types__link" href="">
+              <article class="ceiling-types__card">
                 <h3>Коммерческий</h3>
                 <img src="img/types/9.jpg" alt="фотография потолка" width="350" height="202">
                 <p>от 169 руб/м² Россия, фабричный Китай<br>
@@ -186,16 +186,13 @@
                   <!-- Slides -->
                   <div class="portfolio-card__slide swiper-slide">
                     <div class="portfolio-card__image">
-                      <img class="swiper-lazy" data-src="img/portfolio/1.jpg" src="img/portfolio/1x1.png"
-                        alt="фотография потолка" width="540" height="406">
-                      <div class="swiper-lazy-preloader"></div>
+                      <img src="img/portfolio/1.jpg" alt="фотография потолка" width="540" height="406">
                     </div>
                   </div>
 
                   <div class="portfolio-card__slide swiper-slide">
                     <div class="portfolio-card__image">
-                      <img class="swiper-lazy" src="img/portfolio/2.jpg" alt="фотография потолка" width="540"
-                        height="406">
+                      <img src="img/portfolio/2.jpg" alt="фотография потолка" width="540" height="406">
                     </div>
                   </div>
 
@@ -284,6 +281,49 @@
       </div>
     </section>
 
+    <section class="main-interior">
+      <div class="wrapper">
+        <h2 class="title title--two">Натяжные потолки под любые интерьеры</h2>
+        <p class="subtitle">Учитываем стиль интерьера вашей квартиры или работаем по вашему дизайн-проекту, чтобы все
+          было красиво</p>
+        <!-- Slider main container -->
+        <div class="main-interior__slider swiper-container-2">
+          <!-- Additional required wrapper -->
+          <div class="main-interior__slider-wrapper swiper-wrapper">
+            <!-- Slides -->
+            <div class="main-interior__slide swiper-slide">
+              <div class="main-interior__image">
+                <img src="img/interiors/1.jpg" alt="фотография потолка" width="540" height="406">
+              </div>
+            </div>
+            <!-- Slides -->
+            <div class="main-interior__slide swiper-slide">
+              <div class="main-interior__image">
+                <img src="img/interiors/2.jpg" alt="фотография потолка" width="540" height="406">
+              </div>
+            </div>
+            <!-- Slides -->
+            <div class="main-interior__slide swiper-slide">
+              <div class="main-interior__image">
+                <img src="img/portfolio/1.jpg" alt="фотография потолка" width="540" height="406">
+              </div>
+            </div>
+            <!-- Slides -->
+            <div class="main-interior__slide swiper-slide">
+              <div class="main-interior__image">
+                <img src="img/portfolio/2.jpg" alt="фотография потолка" width="540" height="406">
+              </div>
+            </div>
+
+          </div> <!-- .portfolio-card__slider -->
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+    </section>
+
 
   </main>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -305,10 +345,19 @@
         crossFade: true
       },
 
-      preloadImages: false,
-      lazy: {
-        loadOnTransitionStart: false,
-        loadPrevNext: false,
+    });
+    const swiper2 = new Swiper('.swiper-container-2', {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination-2",
+        clickable: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
       },
 
     });
