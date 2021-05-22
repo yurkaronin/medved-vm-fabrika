@@ -14,6 +14,13 @@
   display: inline-block;
   letter-spacing: 2px;
   border: 3px solid #ff3636;
+  @media (max-width: 880px) {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+  @media (max-width: 500px) {
+    padding: 15px 10px;
+  }
   &:hover,
   &:active,
   &:focus {
@@ -43,12 +50,5 @@
       background-color: #0040ad;
       border-color: #0040ad;
     }
-  }
-}
-
-@media (max-width: 880px) {
-  .button {
-    padding: 10px 15px;
-    font-size: 14px;
   }
 }
