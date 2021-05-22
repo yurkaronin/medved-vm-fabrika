@@ -32,6 +32,9 @@
 }
 .about-prices__details {
   max-width: 545px;
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
 }
 
 .about-prices__title {
@@ -42,6 +45,11 @@
   }
   @media (max-width: 650px) {
     margin-bottom: 25px;
+  }
+  span {
+    background-color: transparent;
+    padding: 0;
+    display: inline;
   }
 }
 
