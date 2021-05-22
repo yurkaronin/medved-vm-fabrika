@@ -17,6 +17,7 @@
 }
 .first-screen__content {
   max-width: 570px;
+  padding-top: 25px;
   @media (max-width: 1510px) {
     max-width: 600px;
     background-color: #fff;
