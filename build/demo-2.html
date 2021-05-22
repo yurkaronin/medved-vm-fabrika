@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная страница нового сайта</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="wrapper">
+        <!-- Swiper -->
+        <div class="custom-slider-1">
+        <div class="swiper-container mySwiper2">
+          <!-- большие картиночки -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--big">
+              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--big">
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--big">
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--big">
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--big">
+              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--big">
+              <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--big">
+              <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--big">
+              <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--big">
+              <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--big">
+              <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+            </div>
+          </div>
+         <!--  навигация -- стрелочки -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div> <!-- .custom-slider -->
+        <!-- миниатюры слайдов -->
+        <div thumbsSlider="" class="swiper-container mySwiper-2-1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--min">
+              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--min">
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--min">
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--min">
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--min">
+              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--min">
+              <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--min">
+              <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--min">
+              <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--min">
+              <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+            </div>
+            <div class="swiper-slide swiper-slide--min">
+              <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+            </div>
+          </div>
+        </div>
+        </div> <!-- .custom-slider  -->
+      </div>
+    </section>
+
+  </main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper-2-1", {
+      spaceBetween: 30,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+
+  </script>
+</body>
+
+</html>
