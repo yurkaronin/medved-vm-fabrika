@@ -14,17 +14,35 @@
   display: inline-block;
   letter-spacing: 2px;
   border: 3px solid #ff3636;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #d02c2c;
+    border-color: #d02c2c;
+  }
 
   &--transparent {
     background: transparent;
     color: #000000;
     border: 3px solid #000000;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #000000;
+      color: #ffffff;
+    }
   }
 
   &--blue {
     background: #4384f3;
     border: 3px solid #4384f3;
     color: #ffffff;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #0040ad;
+      border-color: #0040ad;
+    }
   }
 }
 
