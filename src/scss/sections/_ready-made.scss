@@ -1,0 +1,42 @@
+.ready-made {
+  padding: 60px 0 100px;
+  background-image: url("../img/bg/pattern4.svg");
+  background-repeat: repeat;
+}
+.ready-made__slider {
+  margin-bottom: 50px;
+  max-width: 100%;
+  width: 100%;
+  img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+  }
+  .title--two {
+    text-align: left;
+    display: inline-block;
+    background-color: #fff;
+    padding: 0 20px;
+    line-height: 140%;
+    text-align: left;
+    position: relative;
+    top: -20px;
+    left: 20px;
+    margin-bottom: 22px;
+  }
+  .text {
+    margin: 0;
+    margin-top: -20px;
+  }
+  .swiper-pagination {
+    display: none;
+    @media (max-width: 900px) {
+      display: block;
+    }
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-custom, .swiper-pagination-fraction {
+    position: initial;
+    margin-top: 20px;
+  }
+}

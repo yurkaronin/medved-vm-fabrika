@@ -1,0 +1,101 @@
+.presentation {
+  padding: 60px 0 0;
+}
+.presentation__title {
+  max-width: 420px;
+  margin-bottom: 25px;
+  @media (max-width: 1010px) {
+    max-width: 100%;
+    margin-bottom: 75px;
+  }
+  @media (max-width: 650px) {
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 25px;
+  }
+}
+
+.presentation__title span {
+  @media (max-width: 1010px) {
+    display: inline;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+.presentation__cite {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 60px;
+  @media (max-width: 1010px) {
+    gap: 30px;
+  }
+  @media (max-width: 650px) {
+    grid-template-columns: auto;
+    margin: 0 auto;
+    max-width: max-content;
+  }
+}
+.presentation__photo {
+  display: block;
+  margin-top: -145px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  @media (max-width: 1200px) {
+    max-width: 400px;
+  }
+  @media (max-width: 1010px) {
+    margin-top: 0;
+  }
+}
+
+.presentation__text {
+  font-size: 24px;
+  line-height: 120%;
+  max-width: 420px;
+  margin-left: 90px;
+  position: relative;
+  @media (max-width: 1200px) {
+    font-size: 20px;
+  }
+  @media (max-width: 1010px) {
+    margin-left: 0;
+  }
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 31px;
+    background-image: url("../img/icons/quotes.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: -90px;
+    @media (max-width: 1010px) {
+      top: -45px;
+      left: 0;
+    }
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.presentation__name {
+  display: inline-block;
+  margin: 10px 0;
+  background-color: #ffffff;
+  padding: 10px;
+}

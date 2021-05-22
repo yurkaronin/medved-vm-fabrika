@@ -1,0 +1,45 @@
+.cost-calculation {
+  padding: 70px 0;
+  background-image: url("../img/bg/2.jpg"), url("../img/bg/pattern3.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: top 50% left, center;
+  position: relative;
+  @media (max-width: 1000px) {
+    background-image: url("../img/bg/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.cost-calculation__wrapper {
+  max-width: 450px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 35px;
+  @media (max-width: 1000px) {
+    margin-right: auto;
+  }
+}
+
+.cost-calculation__title {
+  margin-bottom: 30px;
+  max-width: 615px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 70px;
+  @media (max-width: 1000px) {
+    margin-right: auto;
+  }
+
+}
+.cost-calculation__label {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+  margin: 0;
+  margin-bottom: 25px;
+  @media (max-width: 1000px) {
+    font-size: 21px;
+  }
+}

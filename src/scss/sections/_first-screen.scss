@@ -1,0 +1,123 @@
+.first-screen {
+  background-image: url("../img/bg/1.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+  @media (max-width: 1200px) {
+    background-image: url("../img/bg/1-1200.jpg");
+  }
+  @media (max-width: 900px) {
+    background-position: center;
+    background-size: cover;
+  }
+  @media (max-width: 600px) {
+    background-image: url("../img/bg/5-600.jpg");
+    padding: 40px 0;
+  }
+}
+.first-screen__content {
+  max-width: 570px;
+  @media (max-width: 1510px) {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 25px 45px;
+  }
+  @media (max-width: 1200px) {
+    max-width: 510px;
+    padding: 25px;
+  }
+  @media (max-width: 900px) {
+    max-width: 550px;
+    padding: 40px;
+    position: relative;
+    top: 45px;
+    margin-bottom: 82px;
+    border: 3px solid #4384f3;
+  }
+  @media (max-width: 600px) {
+    max-width: 100%;
+    top: auto;
+    margin-bottom: 0;
+    border: none;
+    padding: 40px 15px;
+  }
+}
+
+.first-screen__title {
+  margin-bottom: 30px;
+  margin-left: -25px;
+  @media (max-width: 600px) {
+    margin-left: 0;
+  }
+  @media (max-width: 450px) {
+    font-size: 25px;
+  }
+  span {
+    background-color: #fff;
+    padding: 5px 25px;
+    display: inline-block;
+    line-height: 115%;
+    @media (max-width: 600px) {
+      padding: 0;
+      display: inline;
+      background-color: transparent;
+    }
+  }
+}
+
+.first-screen__subtitle {
+  margin-bottom: 70px;
+  max-width: 370px;
+  font-size: 30px;
+  line-height: 120%;
+  text-align: left;
+  margin-bottom: 0;
+  @media (max-width: 1200px) {
+    margin-bottom: 50px;
+  }
+  @media (max-width: 600px) {
+    background-color: #fff;
+    padding: 0;
+    display: inline-block;
+    font-size: 18px;
+  }
+  @media (max-width: 450px) {
+    font-size: 20px;
+  }
+}
+.first-screen__text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  margin: 0;
+  margin-bottom: 20px;
+  @media (max-width: 1200px) {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 600px) {
+    background-color: #fff;
+    padding: 0;
+    display: inline-block;
+  }
+  @media (max-width: 450px) {
+    font-size: 1rem;
+  }
+}
+.first-screen__button {
+  margin-bottom: 30px;
+  @media (max-width: 600px) {
+    padding: 20px 35px;
+    margin-bottom: 0;
+  }
+}
+
+.first-screen__footnote {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  margin: 0;
+  max-width: 450px;
+  @media (max-width: 600px) {
+    display: none;
+  }
+}

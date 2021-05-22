@@ -1,0 +1,31 @@
+.contacts-block {
+  max-width: 720px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contacts-block__details {
+  max-width: 450px;
+}
+.contacts-block__text {
+  font-size: 24px;
+  line-height: 140%;
+}
+.contacts-block__tel {
+  display: block;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+.contacts-block__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  max-width: 125px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
