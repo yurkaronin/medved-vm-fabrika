@@ -28,15 +28,15 @@
   }
 
   &__name {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 30px;
     line-height: 140%;
     margin: 0;
     position: absolute;
     top: -25px;
     left: 15px;
-    @media (max-width: 850px) {
-      font-size: 24px;
+    @media (max-width: 1370px) {
+      font-size: 23px;
     }
     @media (max-width: 450px) {
       font-size: 20px;
@@ -45,7 +45,8 @@
       color: #000000;
       background-color: #fff;
       display: inline-block;
-      padding: 0 15px;
+      padding: 0px 20px;
+      letter-spacing: 3px;
     }
   }
   &__photo {

@@ -4,6 +4,9 @@
   background-repeat: no-repeat, repeat;
   background-position: top 50% left, center;
   position: relative;
+  @media (max-width: 1370px) {
+    background-position: top 50% left -310px, center;
+  }
   @media (max-width: 1000px) {
     background-image: url("../img/bg/2.jpg");
     background-repeat: no-repeat;
@@ -31,7 +34,6 @@
   @media (max-width: 1000px) {
     margin-right: auto;
   }
-
 }
 .cost-calculation__label {
   font-weight: 700;

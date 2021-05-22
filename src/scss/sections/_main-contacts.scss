@@ -6,7 +6,6 @@
   @media (max-width: 1000px) {
     padding: 70px 0;
   }
-
 }
 .main-contacts__wrapper {
   background-color: #f2f2f2;
@@ -36,12 +35,15 @@
     left: 100%;
     background-color: #f2f2f2;
     @media (max-width: 1000px) {
-    display: none;
-  }
+      display: none;
+    }
   }
 }
 .main-contacts__title {
   margin-left: -280px;
+  @media (max-width: 1370px) {
+    margin-bottom: 35px;
+  }
   @media (max-width: 1000px) {
     margin: 0 auto;
     margin-bottom: 40px;
