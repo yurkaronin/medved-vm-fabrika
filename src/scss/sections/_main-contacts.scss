@@ -41,9 +41,7 @@
 }
 .main-contacts__title {
   margin-left: -280px;
-  @media (max-width: 1370px) {
-    margin-bottom: 35px;
-  }
+  margin-bottom: 35px;
   @media (max-width: 1000px) {
     margin: 0 auto;
     margin-bottom: 40px;
