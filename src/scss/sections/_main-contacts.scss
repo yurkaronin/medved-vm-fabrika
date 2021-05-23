@@ -64,6 +64,9 @@
   right: 0;
   bottom: 0;
   z-index: 0;
+  background-image: url("../img/bg/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   @media (max-width: 1000px) {
     display: none;
   }
