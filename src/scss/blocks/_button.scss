@@ -1,54 +1,80 @@
 /* кнопки */
-.button {
-  background: #ff3636;
-  color: #ffffff;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 110%;
-  padding: 20px 25px;
-  text-decoration: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  text-align: center;
-  display: inline-block;
-  letter-spacing: 2px;
-  border: 3px solid #ff3636;
-  @media (max-width: 880px) {
-    padding: 15px 20px;
-    font-size: 14px;
-  }
-  @media (max-width: 500px) {
-    padding: 15px 10px;
-  }
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: #d02c2c;
-    border-color: #d02c2c;
-  }
-
-  &--transparent {
-    background: transparent;
-    color: #000000;
-    border: 3px solid #000000;
-    &:hover,
-    &:active,
-    &:focus {
-      background-color: #000000;
-      color: #ffffff;
-    }
-  }
-
-  &--blue {
-    background: #4384f3;
-    border: 3px solid #4384f3;
+.custom-page {
+  .button {
+    background: #ff3636;
     color: #ffffff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 110%;
+    padding: 20px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 2px;
+    border: 3px solid #ff3636;
+    @media (max-width: 880px) {
+      padding: 15px 20px;
+      font-size: 14px;
+    }
+    @media (max-width: 500px) {
+      padding: 15px 10px;
+    }
     &:hover,
     &:active,
     &:focus {
-      background-color: #0040ad;
-      border-color: #0040ad;
+      background-color: #d02c2c;
+      border-color: #d02c2c;
+    }
+
+    &--transparent {
+      background: transparent;
+      color: #000000;
+      border: 3px solid #000000;
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: #000000;
+        color: #ffffff;
+      }
+    }
+
+    &--blue {
+      background: #4384f3;
+      border: 3px solid #4384f3;
+      color: #ffffff;
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: #0040ad;
+        border-color: #0040ad;
+      }
     }
   }
+}
+
+.custom-page .button:hover:not(:disabled):not(.disabled) {
+	background-color: #d02c2c !important;
+  background: #d02c2c !important;
+  border-color: #d02c2c !important;
+	color: #d02c2c;
+
+}
+
+.custom-page .button--blue:hover:not(:disabled):not(.disabled) {
+	background-color: #0040ad !important;
+  background: #0040ad !important;
+  border-color: #0040ad !important;
+	color: #0040ad;
+
+}
+
+.custom-page .button--transparent:hover:not(:disabled):not(.disabled) {
+	background-color: transparent !important;
+  background: transparent !important;
+  border-color: #000000 !important;
+	color: #000000;
+
 }
